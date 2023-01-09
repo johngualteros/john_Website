@@ -1,0 +1,24 @@
+<div class="container">
+    <h1>{{ "ABOUT_01" | translate }}</h1>
+
+    <div class="container-about">
+        <div>
+            <h3>{{ "ABOUT_02" | translate }}</h3>
+
+            <p class="description">
+                {{ "ABOUT_DESCRIPTION" | translate }}    
+            </p>
+        </div>
+
+        <div>
+            <h3>{{ "ABOUT_03" | translate }}</h3>
+
+            <div class="containerSkills">
+                <span *ngFor="let skill of skills" >
+                    <img [src]="skill.icon" [alt]="skill.name" width="20">
+                    {{ skill.name }}
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

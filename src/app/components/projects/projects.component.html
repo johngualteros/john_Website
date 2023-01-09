@@ -1,0 +1,30 @@
+<div class="container">
+    <h1>Projects</h1>
+
+    <div  *ngFor="let project of projects" class="project">
+
+        <div class="image">
+            <img [src]="project.image" [alt]="project.title" width="700">
+        </div>
+
+        <div class="contentProject">
+            <h1>{{ project.title }}</h1>
+
+            <div class="contentDescription">
+                <p>
+                    {{ project.description }}
+                </p>
+            </div>
+
+            <a class="github" [href]="project.link" target="_blank">
+                <i class="bi bi-github"></i>
+            </a>
+
+            <div class="technologies">
+                <span *ngFor="let technology of project.technologies">
+                    {{ technology }},
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
