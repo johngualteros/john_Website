@@ -15,7 +15,7 @@
 
             <div class="containerSkills">
                 <span *ngFor="let skill of skills" >
-                    <img [src]="skill.icon" [alt]="skill.name" width="20">
+                    <img [ngSrc]="skill.icon" [alt]="skill.name" width="20">
                     {{ skill.name }}
                 </span>
             </div>

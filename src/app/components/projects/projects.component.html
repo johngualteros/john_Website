@@ -4,7 +4,7 @@
     <div  *ngFor="let project of projects" class="project">
 
         <div class="image">
-            <img [src]="project.image" [alt]="project.title" width="700">
+            <img [ngSrc]="project.image" [alt]="project.title" width="700">
         </div>
 
         <div class="contentProject">

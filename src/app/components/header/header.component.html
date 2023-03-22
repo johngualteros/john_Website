@@ -4,14 +4,14 @@
     <p (click)="toggleDarkMode(true)" *ngIf="!isDarkMode">🌚</p>
     <p (click)="toggleDarkMode(false)" *ngIf="isDarkMode">🌞</p>
     <img
-      src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/800px-Bandera_de_Espa%C3%B1a.svg.png"
+      ngSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/800px-Bandera_de_Espa%C3%B1a.svg.png"
       width="30"
       (click)="changeLanguage('es')"
       *ngIf="language === 'en'"
     />
 
     <img
-      src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/640px-Flag_of_the_United_Kingdom.svg.png"
+      ngSrc="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/640px-Flag_of_the_United_Kingdom.svg.png"
       width="30"
       (click)="changeLanguage('en')"
       *ngIf="language === 'es'"
